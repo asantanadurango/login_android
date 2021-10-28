@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Login_v1</string>
+    <string name="lbl_login_string">User</string>
+    <string name="lbl_password_string">Password</string>
+    <string name="lbl_username_string">Username</string>
+    <string name="txt_login_string">user@mail.com</string>
+    <string name="txt_password_string">........</string>
+    <string name="txt_username_string">Username</string>
+    <string name="btn_login_string">Log  In</string>
+    <string name="btn_signup_string">Sign Up</string>
+    <string-array name="planets_array">
+        <item>Admin</item>
+        <item>User</item>
+        <item>test3</item>
+    </string-array>
+</resources>

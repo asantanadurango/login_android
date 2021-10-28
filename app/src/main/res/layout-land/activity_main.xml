@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/img_logo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="570dp" />
+
+    <TextView
+        android:id="@+id/lbl_user"
+        android:layout_width="31dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/lbl_login_string"
+        android:textColor="@color/primary_lght"
+        app:layout_constraintBottom_toTopOf="@+id/txt_user"
+        app:layout_constraintStart_toStartOf="@+id/txt_user" />
+
+    <EditText
+        android:id="@+id/txt_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/primary_lght"
+        android:ems="10"
+        android:hint="@string/txt_login_string"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textColor="@color/second_light"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.694"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.333" />
+
+    <TextView
+        android:id="@+id/lbl_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:text="@string/lbl_password_string"
+        android:textColor="@color/primary_lght"
+        app:layout_constraintBottom_toTopOf="@+id/txt_password"
+        app:layout_constraintStart_toStartOf="@+id/txt_password" />
+
+    <EditText
+        android:id="@+id/txt_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="272dp"
+        android:backgroundTint="@color/primary_lght"
+        android:ems="10"
+        android:hint="@string/lbl_password_string"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        android:textColor="@color/second_light"
+        app:layout_constraintBottom_toTopOf="@+id/guideline4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.273"
+        app:layout_constraintStart_toStartOf="@+id/guideline3"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageView
+        android:id="@+id/img_main_logo"
+        android:layout_width="220dp"
+        android:layout_height="232dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/logo_light_foreground" />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:backgroundTint="@color/primary_lght"
+        android:onClick="toHomeActivity"
+        android:text="@string/btn_login_string"
+        android:textColor="@color/third_light"
+        app:layout_constraintStart_toEndOf="@+id/btn_signup"
+        app:layout_constraintTop_toTopOf="@+id/btn_signup" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="302dp" />
+
+    <Button
+        android:id="@+id/btn_signup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:backgroundTint="@color/third_light"
+        android:onClick="toSignupActivity"
+        android:text="@string/btn_signup_string"
+        android:textColor="@color/primary_lght"
+        app:layout_constraintStart_toStartOf="@+id/txt_password"
+        app:layout_constraintTop_toBottomOf="@+id/txt_password" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
