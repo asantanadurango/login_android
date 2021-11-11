@@ -5,7 +5,7 @@
     android:id="@+id/img_logo"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".LoginActivity">
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline2"
@@ -26,7 +26,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="20dp"
-        android:text="@string/lbl_login_string"
+        android:text="@string/lbl_email_string"
         android:textColor="@color/primary_lght"
         app:layout_constraintBottom_toTopOf="@+id/txt_user"
         app:layout_constraintStart_toStartOf="@+id/txt_user" />
@@ -37,7 +37,7 @@
         android:layout_height="wrap_content"
         android:backgroundTint="@color/primary_lght"
         android:ems="10"
-        android:hint="@string/txt_login_string"
+        android:hint="@string/txt_email_string"
         android:inputType="textPersonName"
         android:minHeight="48dp"
         android:textColor="@color/second_light"

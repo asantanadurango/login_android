@@ -5,7 +5,7 @@
     android:id="@+id/img_logo"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".LoginActivity">
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline4"
@@ -16,10 +16,10 @@
 
     <TextView
         android:id="@+id/lbl_user"
-        android:layout_width="31dp"
-        android:layout_height="0dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
-        android:text="@string/lbl_login_string"
+        android:text="@string/lbl_email_string"
         android:textColor="@color/primary_lght"
         app:layout_constraintBottom_toTopOf="@+id/txt_user"
         app:layout_constraintStart_toStartOf="@+id/txt_user" />
@@ -30,16 +30,16 @@
         android:layout_height="wrap_content"
         android:backgroundTint="@color/primary_lght"
         android:ems="10"
-        android:hint="@string/txt_login_string"
+        android:hint="@string/lbl_email_string"
         android:inputType="textPersonName"
         android:minHeight="48dp"
         android:textColor="@color/second_light"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.694"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.275"
+        app:layout_constraintStart_toStartOf="@+id/guideline3"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.333" />
+        app:layout_constraintVertical_bias="0.307" />
 
     <TextView
         android:id="@+id/lbl_password"
@@ -55,17 +55,15 @@
         android:id="@+id/txt_password"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="272dp"
+        android:layout_marginTop="64dp"
         android:backgroundTint="@color/primary_lght"
         android:ems="10"
         android:hint="@string/lbl_password_string"
         android:inputType="textPassword"
         android:minHeight="48dp"
         android:textColor="@color/second_light"
-        app:layout_constraintBottom_toTopOf="@+id/guideline4"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.273"
-        app:layout_constraintStart_toStartOf="@+id/guideline3"
+        app:layout_constraintStart_toStartOf="@+id/txt_user"
+        app:layout_constraintTop_toBottomOf="@+id/txt_user"
         tools:ignore="SpeakableTextPresentCheck" />
 
     <ImageView
